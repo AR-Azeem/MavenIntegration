@@ -5,7 +5,7 @@ pipeline{
             steps{
                 dir('test'){
                     git url:"https://github.com/AR-Azeem/test.git" , branch:'master'
-                    echo pwd
+                    bat pwd
                 }
             }
         }
