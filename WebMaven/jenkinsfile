@@ -11,8 +11,8 @@ pipeline{
         }
         stage("git checkout"){
             steps{
-                bat 'cd WebMaven'
-                bat 'pwd'
+                bat 'cd WebMaven && pwd'
+                
             }
         }
     }
