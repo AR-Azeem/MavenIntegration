@@ -3,18 +3,17 @@ pipeline{
     stages{
         stage("checkout"){
             steps{
+                step
                 dir('test123'){
                     git url:"https://github.com/AR-Azeem/test.git" , branch:'master'
                     bat 'pwd'
                 }
-            }
-            steps{
-                bat 'pwd'
-            }
+            }           
         }
         stage("git checkout"){
             steps{
-                bat 'cd WebMaven && pwd'
+                bat 'cd WebMaven'
+                bat 'pwd'
                 
             }
         }
