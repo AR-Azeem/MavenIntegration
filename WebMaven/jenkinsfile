@@ -8,6 +8,9 @@ pipeline{
                     bat 'pwd'
                 }
             }
+            steps{
+                bat 'pwd'
+            }
         }
         stage("git checkout"){
             steps{
